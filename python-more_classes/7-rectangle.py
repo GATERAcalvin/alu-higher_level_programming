@@ -16,8 +16,10 @@ class Rectangle:
             height (int): the height of the rectangle.
         """
         Rectangle.number_of_instances += 1
-        self.height = height
+        self.__height = 0
+        self.__width = 0
         self.width = width
+        self.height = height
 
     @property
     def width(self):
